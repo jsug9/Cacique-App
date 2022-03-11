@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  Cacique App
+
+  Created by Augusto Galindo Alí on 13/08/21.
+  
+*/
+
+"Menu" = "Menu";
+"Cart" = "Cart";
+"Add to Cart" = "Add to Cart";
+"Share" = "Share";
+"Hop" = "Hop";
+"IBU:" = "IBU:";
+"ABV:" = "ABV:";
+"Description:" = "Description:";
+"Amount:" = "Amount:";
+"Subtotal:" = "Subtotal:";
+"Discount:" = "Discount:";
+"Total:" = "Total:";
+"Finish Order" = "Finish Order";
+"Not Available" = "Not Available";
+"TabLogo" = "Cacique";
+"Who are we?" = "Who are we?";
+"Find us:" = "Find us:";
+"We are an Arequipa company, which puts passion to the elaboration of our craft beers, that passion makes our final product delight even the most demanding palates of our consumers. Our styles of craft beer are in constant innovation, using imported and local inputs, with which we achieve different presentations, to give our beers regional character." = "We are an Arequipa company, which puts passion to the elaboration of our craft beers, that passion makes our final product delight even the most demanding palates of our consumers. Our styles of craft beer are in constant innovation, using imported and local inputs, with which we achieve different presentations, to give our beers regional character.";
+

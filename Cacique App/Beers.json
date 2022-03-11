@@ -1,0 +1,120 @@
+[
+  {
+    "ingredients" : "Agua, malta, lúpulo, levadura.",
+    "id" : "American Pale Ale",
+    "price" : 12,
+    "stock" : 50,
+    "abv" : 5.2000000000000002,
+    "ibu" : 42,
+    "description" : "Una Ale americana, pálida, refrescante y lupulada, pero con suficiente malta de apoyo para hacer que la cerveza sea equilibrada y bebible."
+  },
+  {
+    "ingredients" : "Agua, malta, lúpulo, levadura.",
+    "id" : "India Pale Ale",
+    "price" : 12,
+    "stock" : 50,
+    "abv" : 9,
+    "ibu" : 80,
+    "description" : "Una cerveza  artesanal decididamente lupulada y amarga, moderadamente fuerte, que presenta variedades complejas que le aportan los 5 tipos de lúpulo para darle notas cítricas, frutales y herbales.  Tiene un final seco, posee una malta limpia y de apoyo que permite que brille una gama creativa de carácter a lúpulo."
+  },
+  {
+    "ingredients" : "Agua, malta, lúpulo, levadura.",
+    "id" : "Coffee Porter",
+    "price" : 12,
+    "stock" : 50,
+    "abv" : 5.2000000000000002,
+    "ibu" : 24,
+    "description" : "Cerveza de estilo inglés, posee maltas tostadas y café nacional del valle de Urubamba, extraído en cold brew. De color marrón y de intensidad moderada con un carácter tostado y amargo."
+  },
+  {
+    "ingredients" : "Agua, malta, lúpulo, levadura.",
+    "id" : "Red Ale",
+    "price" : 12,
+    "stock" : 50,
+    "abv" : 5.5,
+    "ibu" : 30,
+    "description" : "Cerveza artesanal de color ámbar y lúpulo de concentración moderada. El balance entre malta caramelo y lúpulo la hacen fácilmente bebible."
+  },
+  {
+    "ingredients" : "Agua, malta, lúpulo, levadura.",
+    "id" : "Mad Volcano",
+    "price" : 12,
+    "stock" : 50,
+    "abv" : 5,
+    "ibu" : 25,
+    "description" : "Una Red Ale única en su género con todo el calor y la fuerza de la lava volcánica del Misti, que le aporta la bravura del rocoto de Arequipa."
+  },
+  {
+    "ingredients" : "Agua, malta, lúpulo, levadura.",
+    "id" : "Coca Pale",
+    "price" : 12,
+    "stock" : 50,
+    "abv" : 6,
+    "ibu" : 40,
+    "description" : "La nobleza de las maltas, el aroma y amargo de los lúpulos, se mezclan en perfecta armonía con la ancestral hoja de coca de los incas para crear una cerveza con carácter."
+  },
+  {
+    "ingredients" : "Agua, malta, lúpulo, levadura.",
+    "id" : "Ke Chicha Kieres",
+    "price" : 12,
+    "stock" : 50,
+    "abv" : 4.7999999999999998,
+    "ibu" : 25,
+    "description" : "Cerveza con adición de guiñapo que le otorga un color tinto que lo asemeja a un vino. Con un sabor muy similar a la tradicional chicha arequipeña."
+  },
+  {
+    "ingredients" : "Agua, malta, lúpulo, levadura.",
+    "id" : "Witbier",
+    "price" : 12,
+    "stock" : 50,
+    "abv" : 5.2000000000000002,
+    "ibu" : 16,
+    "description" : "Una Ale a base de malta y trigo andino. Refrescante, elegante, sabrosa, de fuerza moderada y con presencia de coriandro, que le otorga frescura y notas especiadas. Sus 5.2% de ABV la hacen una cerveza bastante ligera de beber."
+  },
+  {
+    "ingredients" : "Agua, malta, lúpulo, levadura.",
+    "id" : "Black Magic Woman",
+    "price" : 14,
+    "stock" : 0,
+    "abv" : 8.5,
+    "ibu" : 44,
+    "description" : "Es una cerveza negra de sabor tostado y textura sedosa de un claro estilo irlandés, maltosa y robusta pero con un toque tropical que le otorga la adición de coco en maduración y con un sutil aroma limpio de alcohol."
+  },
+  {
+    "ingredients" : "Agua, malta, lúpulo, levadura.",
+    "id" : "Morena Mia",
+    "price" : 12,
+    "stock" : 0,
+    "abv" : 7,
+    "ibu" : 66,
+    "description" : "Es una Black IPA de maltas oscuras pero con la complejidad de aromas y amargor que le confieren los lúpulos."
+  },
+  {
+    "ingredients" : "Agua, malta, lúpulo, levadura.",
+    "id" : "No Jora",
+    "price" : 12,
+    "stock" : 50,
+    "abv" : 4.7999999999999998,
+    "ibu" : 16,
+    "description" : "Es una Pale con maltas base y maíz de jora germinado, ligera y muy refrescante."
+  },
+  {
+    "ingredients" : "Agua, malta, lúpulo, levadura.",
+    "id" : "Quadrupel",
+    "price" : 14,
+    "stock" : 50,
+    "abv" : 8.5999999999999996,
+    "ibu" : 30,
+    "description" : "Es una Ale belga oscura, compleja y muy fuerte, con una deliciosa mezcla de malta, sabores de frutos secos y elementos especiados."
+  },
+  {
+    "ingredients" : "Agua, malta, lúpulo, levadura.",
+    "id" : "Chola Pendja",
+    "price" : 12,
+    "stock" : 50,
+    "abv" : 5.5,
+    "ibu" : 16,
+    "description" : "En la Chola Pendja, las hierbas andinas y maltas cerveceras se juntan en una travesura que rinde homenaje a la sabiduría andina."
+  }
+]
+

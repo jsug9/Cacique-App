@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "American Pale Ale.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
