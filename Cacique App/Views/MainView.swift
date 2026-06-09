@@ -22,6 +22,7 @@ struct MainView: View {
                 OrderView()
             }
         }
+        .tabViewStyle(.sidebarAdaptable)
         .environmentObject(dataStore)
     }
 }

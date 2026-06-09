@@ -9,10 +9,13 @@ import SwiftUI
 import AVKit
 
 func simpleSuccess() {
+#if os(iOS)
     let generator = UINotificationFeedbackGenerator()
     generator.notificationOccurred(.success)
+#endif
 }
 
+#if os(iOS)
 struct NavigationBarModifier: ViewModifier {
 
     var backgroundColor: UIColor?
@@ -32,7 +35,7 @@ struct NavigationBarModifier: ViewModifier {
     }
 
     func body(content: Content) -> some View {
-        ZStack{
+        ZStack {
             content
             VStack {
                 GeometryReader { geometry in
@@ -46,39 +49,31 @@ struct NavigationBarModifier: ViewModifier {
     }
 }
 
-//struct AVPlayerControllerRepresented : NSViewRepresentable {
-//    var player : AVPlayer
-//    
-//    func makeNSView(context: Context) -> AVPlayerView {
-//        let view = AVPlayerView()
-//        view.controlsStyle = .none
-//        view.player = player
-//        return view
-//    }
-//    
-//    func updateNSView(_ nsView: AVPlayerView, context: Context) {
-//        
-//    }
-//}
-
 extension View {
     func navigationBarColor(backgroundColor: UIColor?, titleColor: UIColor?) -> some View {
         self.modifier(NavigationBarModifier(backgroundColor: backgroundColor, titleColor: titleColor))
     }
 }
+#else
+extension View {
+    func navigationBarColor(backgroundColor: UIColor?, titleColor: UIColor?) -> some View {
+        self
+    }
+}
+#endif
 
 extension ScrollView {
-    
+
     public func fixFlickering() -> some View {
-        
+
         return self.fixFlickering { (scrollView) in
-            
+
             return scrollView
         }
     }
-    
+
     public func fixFlickering<T: View>(@ViewBuilder configurator: @escaping (ScrollView<AnyView>) -> T) -> some View {
-        
+
         GeometryReader { geometryWithSafeArea in
             GeometryReader { geometry in
                 configurator(

@@ -9,11 +9,12 @@ import SwiftUI
 
 struct DetailView: View {
     @EnvironmentObject var dataStore: DataStore
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @State var isTapped = false
-    
+
     @State var beer: Beer
     @State private var quantityStepper = 1
-    
+
     @State private var animationAmount: CGFloat = 0
     
     var isAvailable: Bool {
@@ -91,13 +92,13 @@ struct DetailView: View {
                         beerInformation()
                             .padding([.horizontal, .top])
                     }
-                    if UIDevice.current.localizedModel == "iPhone" {
-                         checkOut()
+                    if horizontalSizeClass == .compact {
+                        checkOut()
                     }
                 }
             }
-            if UIDevice.current.localizedModel != "iPhone" {
-                 checkOut()
+            if horizontalSizeClass != .compact {
+                checkOut()
             }
         }
     }
