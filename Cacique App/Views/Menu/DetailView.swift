@@ -187,12 +187,12 @@ struct DetailView: View {
 }
 
 struct LandscapeModifier: ViewModifier {
-    let height = UIScreen.main.bounds.width // 1
-    let width = UIScreen.main.bounds.height // 2
-    
     func body(content: Content) -> some View {
-        content
-            .previewLayout(.fixed(width: width, height: height)) // 3
+        let screen = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.screen
+        let width = screen?.bounds.height ?? 844
+        let height = screen?.bounds.width ?? 390
+        return content
+            .previewLayout(.fixed(width: width, height: height))
             .environment(\.horizontalSizeClass, .compact)
             .environment(\.verticalSizeClass, .compact)
     }
