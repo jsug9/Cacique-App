@@ -9,7 +9,7 @@ import SwiftUI
 import AVKit
 
 func simpleSuccess() {
-#if os(iOS)
+#if os(iOS) && !targetEnvironment(macCatalyst)
     let generator = UINotificationFeedbackGenerator()
     generator.notificationOccurred(.success)
 #endif

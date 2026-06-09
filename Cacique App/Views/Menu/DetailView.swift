@@ -189,9 +189,14 @@ struct DetailView: View {
 
 struct LandscapeModifier: ViewModifier {
     func body(content: Content) -> some View {
+#if os(iOS)
         let screen = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.screen
-        let width = screen?.bounds.height ?? 844
-        let height = screen?.bounds.width ?? 390
+        let width: CGFloat = screen?.bounds.height ?? 844
+        let height: CGFloat = screen?.bounds.width ?? 390
+#else
+        let width: CGFloat = 844
+        let height: CGFloat = 390
+#endif
         return content
             .previewLayout(.fixed(width: width, height: height))
             .environment(\.horizontalSizeClass, .compact)
