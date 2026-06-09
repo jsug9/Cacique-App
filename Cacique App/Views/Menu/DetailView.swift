@@ -42,13 +42,16 @@ struct DetailView: View {
         .navigationTitle(beer.id)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarColor(backgroundColor: .systemBackground, titleColor: .label)
-        .navigationBarItems(trailing: Button(action: {
-            //Share Beer
-            
-        }, label: {
-            Image(systemName: "square.and.arrow.up")
-                .imageScale(.medium)
-        }))
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
+                    // Share Beer
+                }) {
+                    Image(systemName: "square.and.arrow.up")
+                        .imageScale(.medium)
+                }
+            }
+        }
     }
 //    Functionality
     func addOrder() {
@@ -163,7 +166,7 @@ struct DetailView: View {
             .padding(12)
             .foregroundColor(.white)
             .background(Color.blue.opacity(!buttonIsAvailable ? 1 : 0.5))
-            .cornerRadius(8.0)
+            .clipShape(.rect(cornerRadius: 8))
             .scaleEffect(isTapped ? 1.2 : 1)
             .disabled(buttonIsAvailable)
         }
@@ -172,18 +175,14 @@ struct DetailView: View {
     }
 }
 
-struct DetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        TabView() {
-            NavigationView {
+#Preview {
+    TabView {
+        Tab("Menu", systemImage: "list.dash") {
+            NavigationStack {
                 DetailView(beer: caciqueBeers[3])
                     .environmentObject(DataStore())
             }
-            .tabItem {
-                Label("Menu", systemImage: "list.dash")
-            }
         }
-//        .landscape()
     }
 }
 

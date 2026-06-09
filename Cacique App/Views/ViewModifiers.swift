@@ -38,7 +38,7 @@ struct NavigationBarModifier: ViewModifier {
                 GeometryReader { geometry in
                     Color(self.backgroundColor ?? .clear)
                         .frame(height: geometry.safeAreaInsets.top)
-                        .edgesIgnoringSafeArea(.top)
+                        .ignoresSafeArea(.all, edges: .top)
                     Spacer()
                 }
             }
@@ -95,7 +95,7 @@ extension ScrollView {
                 }
                 )
             }
-            .edgesIgnoringSafeArea(.all)
+            .ignoresSafeArea()
         }
     }
 }

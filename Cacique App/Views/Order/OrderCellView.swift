@@ -52,13 +52,10 @@ struct OrderCellView: View {
     
 }
 
-struct OrderCellView_Previews: PreviewProvider {
-    @State static var order = Order(beer: caciqueBeers[0], quantity: 1)
-    
-    static var previews: some View {
-        List() {
-            OrderCellView(order: $order)
-        }
+#Preview {
+    @Previewable @State var order = Order(beer: caciqueBeers[0], quantity: 1)
+    List {
+        OrderCellView(order: $order)
     }
 }
 

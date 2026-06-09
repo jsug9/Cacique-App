@@ -27,10 +27,6 @@ struct MenuCellView: View {
     }
 }
 
-struct MenuCellView_Previews: PreviewProvider {
-    @State private var selection = 1
-    
-    static var previews: some View {
-        MenuCellView(beer: caciqueBeers[3])
-    }
+#Preview {
+    MenuCellView(beer: caciqueBeers[3])
 }

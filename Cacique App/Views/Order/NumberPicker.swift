@@ -35,8 +35,6 @@ struct NumberPicker: View {
     }
 }
 
-struct NumberPicker_Previews: PreviewProvider {
-    static var previews: some View {
-        NumberPicker(selection: .constant(2000), isShowing: .constant(true))
-    }
+#Preview {
+    NumberPicker(selection: .constant(2000), isShowing: .constant(true))
 }
